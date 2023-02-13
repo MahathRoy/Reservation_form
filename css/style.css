@@ -1,0 +1,39 @@
+/* Author : Midhun Roy 
+Time : 12:05 pm*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.header {
+	background-image: url("../images/bg-img.jpg");
+	background-size: cover;
+	font-family: "Roboto", sans-serif;
+	height: 100vh;
+}
+#coupon {
+	display: none;
+}
+
+.container {
+	margin-left: 32%;
+}
+.container > div {
+	padding: 1%;
+}
+.aside {
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	background-color: rgba(214, 198, 168, 0.8);
+}
+@media screen and (max-width: 576px) {
+	.header {
+		background-image: none;
+		height: min-content;
+		justify-content: center;
+		background-image: linear-gradient(to bottom right, yellow, red);
+	}
+	.container {
+		margin-left: 0;
+	}
+}
